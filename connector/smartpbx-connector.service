@@ -1,0 +1,17 @@
+[Unit]
+Description=SmartPBX Asterisk connector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=smartpbx
+WorkingDirectory=/opt/smartpbx/connector
+EnvironmentFile=/opt/smartpbx/connector/.env
+ExecStart=/usr/bin/python3 /opt/smartpbx/connector/main.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

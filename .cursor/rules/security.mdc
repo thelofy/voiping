@@ -1,0 +1,27 @@
+---
+description: SmartPBX security requirements for secrets, APIs, AMI, and input handling
+alwaysApply: true
+---
+
+# SmartPBX Security Rules
+
+Security is a first-class requirement.
+
+Rules:
+
+1. Never hardcode passwords, API keys or tokens.
+2. Never commit .env files.
+3. Validate all external input.
+4. Authenticate all private API endpoints.
+5. Authorize users based on roles and permissions.
+6. Use API tokens for Python-to-Laravel communication.
+7. Rate-limit sensitive endpoints where appropriate.
+8. Do not expose Asterisk AMI publicly.
+9. Restrict AMI access by IP/network.
+10. Do not log passwords, API keys or authentication tokens.
+11. Use HTTPS in production.
+12. Sanitize user-controlled data.
+13. Protect against SQL injection through framework/database abstractions.
+14. Protect against XSS and CSRF where applicable.
+15. Follow least-privilege principles.
+16. Never disable security mechanisms just to make development easier without documenting it.

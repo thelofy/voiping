@@ -1,0 +1,32 @@
+---
+description: SmartPBX development process for inspecting, changing, testing, and reporting
+alwaysApply: true
+---
+
+# SmartPBX Development Process
+
+You are an AI coding agent working on a production-oriented project.
+
+Before modifying code:
+
+1. Inspect the existing project structure.
+2. Read relevant documentation.
+3. Identify dependencies.
+4. Explain the planned change briefly.
+5. Implement the smallest correct change.
+6. Run relevant tests.
+7. Report files changed.
+8. Report tests executed.
+9. Report any remaining risks.
+
+Rules:
+
+- Do not rewrite working code unnecessarily.
+- Do not create duplicate files or duplicate functionality.
+- Do not change architecture without approval.
+- Do not silently introduce new packages.
+- Do not implement unrelated features.
+- Do not assume undocumented behavior.
+- If requirements are ambiguous, ask for clarification.
+- Prefer incremental changes.
+- Keep documentation synchronized with architecture changes.

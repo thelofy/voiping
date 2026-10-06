@@ -1,0 +1,7 @@
+Event: DialEnd
+DialStatus: ANSWER
+CallerIDNum: 09121234567
+Linkedid: 1728000000.1
+DestUniqueid: 1728000000.2
+DestChannel: SIP/1001-00000002
+DialString: 1001

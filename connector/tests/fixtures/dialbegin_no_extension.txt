@@ -1,0 +1,9 @@
+Event: DialBegin
+CallerIDNum: 09121234567
+CallerIDName: 
+Uniqueid: 1728000000.3
+Linkedid: 1728000000.3
+DestUniqueid: 1728000000.4
+DestChannel: SIP/trunk-00000004
+DialString: SIP/trunk
+Context: from-trunk

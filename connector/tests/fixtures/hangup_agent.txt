@@ -1,0 +1,6 @@
+Event: Hangup
+Cause: 16
+CallerIDNum: 09121234567
+Uniqueid: 1728000000.2
+Linkedid: 1728000000.1
+Channel: SIP/1001-00000002

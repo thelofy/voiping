@@ -1,0 +1,5 @@
+Event: VarSet
+Channel: SIP/1001-00000002
+Variable: DIALSTATUS
+Value: ANSWER
+Uniqueid: 1728000000.2

@@ -1,0 +1,32 @@
+---
+description: Laravel development standards for SmartPBX
+globs: "**/*.php"
+alwaysApply: false
+---
+
+# Laravel Development Rules
+
+Project: SmartPBX
+
+Use Laravel best practices.
+
+Rules:
+
+1. Use migrations for all database changes.
+2. Use Eloquent models and relationships.
+3. Use Form Requests for validation.
+4. Use Service classes for business logic.
+5. Keep controllers thin.
+6. Use API Resources where appropriate.
+7. Use policies/gates for authorization.
+8. Never place passwords or secrets in source code.
+9. Use .env for environment-specific configuration.
+10. Use database transactions for multi-step operations.
+11. Add indexes to frequently searched fields.
+12. Use queues for long-running operations.
+13. Write automated tests for important business logic.
+14. Do not duplicate business logic.
+15. Use meaningful class and method names.
+16. Follow PSR standards.
+17. Do not add packages unless there is a clear reason.
+18. Before adding a dependency, explain why it is necessary.

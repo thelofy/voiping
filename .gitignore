@@ -1,0 +1,45 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Local databases
+*.sqlite
+*.sqlite-journal
+*.sqlite*
+
+# Logs and runtime
+*.log
+.DS_Store
+Thumbs.db
+
+# Dependencies and build output
+**/node_modules/
+**/vendor/
+**/public/build/
+**/public/hot/
+**/public/storage/
+
+# Python
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# PHP / Laravel local artifacts
+**/.phpunit.cache/
+**/.phpunit.result.cache
+**/storage/*.key
+**/storage/pail/
+**/auth.json
+_ide_helper.php
+
+# IDE / OS / editor
+.idea/
+.vscode/
+.zed/
+.nova/
+*.swp
+*~

@@ -1,0 +1,35 @@
+---
+description: Python Asterisk AMI connector rules for SmartPBX
+globs: "**/*.py"
+alwaysApply: false
+---
+
+# Python Asterisk Connector Rules
+
+The Python service is responsible only for Asterisk integration.
+
+Responsibilities:
+
+- Connect to Asterisk AMI
+- Authenticate securely
+- Receive Asterisk events
+- Normalize events
+- Send events to Laravel
+- Reconnect automatically
+- Log important events
+- Handle connection failures
+
+Rules:
+
+1. Never hardcode AMI credentials.
+2. Use environment variables.
+3. Keep AMI-specific code isolated.
+4. Do not implement Laravel business logic in Python.
+5. Do not directly access the Laravel database.
+6. Communicate with Laravel through the API.
+7. Implement retry and reconnect logic.
+8. Log connection failures.
+9. Do not expose AMI credentials through logs.
+10. Write unit tests for event parsing and normalization.
+11. Keep the connector lightweight.
+12. Do not implement advanced call control until explicitly requested.

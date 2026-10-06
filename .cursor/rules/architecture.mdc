@@ -1,0 +1,63 @@
+---
+description: SmartPBX architecture boundaries between Laravel, Python, and Asterisk
+alwaysApply: true
+---
+
+# SmartPBX Architecture Rules
+
+You are working on SmartPBX, a commercial VoIP management platform.
+
+Core architecture:
+
+Laravel:
+- Main backend application
+- Authentication
+- Authorization
+- Customers
+- Users
+- Extensions
+- Call logs
+- Business logic
+- REST API
+- Admin dashboard
+- Operator dashboard
+
+Python:
+- Asterisk integration layer
+- AMI connection
+- Asterisk event processing
+- Event normalization
+- Communication with Laravel API
+
+Asterisk/Issabel:
+- Telephony engine
+- Must not be modified unnecessarily
+- SmartPBX communicates through supported interfaces
+
+Architecture:
+
+Asterisk/Issabel
+        ↓
+       AMI
+        ↓
+Python Connector
+        ↓
+Laravel API
+        ↓
+Database / Web UI
+
+Rules:
+
+1. Do not modify Issabel source code.
+2. Do not place Asterisk-specific logic inside Laravel unless absolutely necessary.
+3. Do not put business logic inside controllers.
+4. Use Laravel services for business logic.
+5. Keep Python connector independent from Laravel internals.
+6. Use REST API between Python and Laravel.
+7. Never hardcode credentials.
+8. Use environment variables for secrets.
+9. Design modules so they can be enabled/disabled independently.
+10. Avoid unnecessary microservices.
+11. Build the MVP first.
+12. Do not implement future modules unless explicitly requested.
+13. Prefer simple maintainable architecture over premature complexity.

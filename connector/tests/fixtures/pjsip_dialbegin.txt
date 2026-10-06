@@ -1,0 +1,9 @@
+Event: DialBegin
+CallerIDNum: 09121234567
+CallerIDName: Office
+Uniqueid: 1728000000.10
+Linkedid: 1728000000.10
+DestUniqueid: 1728000000.11
+DestChannel: PJSIP/1001-0000000a
+DialString: 
+Context: from-trunk
